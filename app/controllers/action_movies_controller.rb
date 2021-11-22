@@ -3,7 +3,7 @@ class ActionMoviesController < ApplicationController
     action_movie = ActionMovie.find_by(imdb_id: params[:imdb_id])
 
     if action_movie
-      render json: { message: "This Action movie already exists in the database. See 'Show movie' in console for specific movie information" }, status: :im_used
+      render json: { message: "This Action movie already exists in the database. See 'Show movie' in console for specific movie information", movie: action_movie }, status: :im_used
     else
       action_movie = ActionMovie.new(
         title: params[:title],

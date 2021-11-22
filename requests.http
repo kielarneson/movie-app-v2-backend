@@ -1,2 +1,2 @@
 ### Show movie
-GET http://localhost:3000/movies/toy+story
+GET http://localhost:3000/movies/toy+story.json
