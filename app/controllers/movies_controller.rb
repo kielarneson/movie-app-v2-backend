@@ -29,6 +29,7 @@ class MoviesController < ApplicationController
         internet_movie_database_rating: params[:internet_movie_database_rating],
         rotten_tomatoes_rating: params[:rotten_tomatoes_rating],
         metacritic_rating: params[:metacritic_rating],
+        action_movie_id: params[:action_movie_id],
       )
 
       if movie.save
