@@ -1,0 +1,2 @@
+### Show movie
+GET http://localhost:3000/movies/toy+story
